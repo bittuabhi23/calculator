@@ -88,6 +88,12 @@ printf("power %d ",pow);
 return 0;
 }
 
+void modulu(){
+	int nom,den;
+	printf("Enter nominator and denomination resp.");
+	scanf("%d%d",&nom,&den);
+	printf("Modulu result is %d",nom%den);
+}
 
 int main()
 {
@@ -97,9 +103,11 @@ printf("\n2.substract");
 printf("\n3.Multiplication");
 printf("\n4.Divide");
 printf("\n5.power :");
+printf("\n6.Modulu :");
+printf("\n7.Exit :");
 printf("\nEnter your choice");
 scanf("%d",&ch);
-while(ch<6)
+while(ch<7)
 {
 	switch(ch)
 	{
@@ -113,6 +121,9 @@ while(ch<6)
 		break;
 		case 5: power();
 		break;
+		case 6: modulu();
+			break;
+			
 }
 	printf("Enter ur choice");
 	scanf("%d",&ch);
